@@ -1,0 +1,37 @@
+{
+  "name": "vite-plugin-collect-api",
+  "version": "1.0.0",
+  "description": "自动收集请求方法",
+  "main": "./dist/vite-plugin-collect-api.umd.cjs",
+  "module": "./dist/vite-plugin-collect-api.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "types": "./src/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-plugin-collect-api.js",
+      "require": "./dist/vite-plugin-collect-api.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "./src/index.d.ts"
+  ],
+  "keywords": [],
+  "author": "2543415495@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/parser": "^7.27.0",
+    "@babel/traverse": "^7.27.0"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.7",
+    "@types/node": "^22.14.1",
+    "vite": "^5.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0"
+  }
+}
